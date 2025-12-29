@@ -38,7 +38,7 @@ const FooterSection = () => {
       <div className="absolute inset-0 bg-linear-to-t from-forest-deep via-background to-transparent" />
 
       {/* Top glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-jade/5 rounded-full blur-[100px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-primary/5 rounded-full blur-[100px]" />
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Newsletter Section */}
@@ -59,7 +59,7 @@ const FooterSection = () => {
             <Input
               type="email"
               placeholder="Enter your email"
-              className="bg-glass border-glass-border/50 focus:border-jade/50"
+              className="bg-glass border-glass-border/50 focus:border-primary/50"
             />
             <Button variant="jade" className="gap-2 whitespace-nowrap">
               Subscribe
@@ -76,7 +76,7 @@ const FooterSection = () => {
               <img
                 src={logo}
                 alt="Nephrite Logo"
-                className="w-8 h-8 text-jade"
+                className="w-8 h-8 text-primary"
               />
               <span className="text-xl font-bold">Nephrite</span>
             </a>
@@ -121,7 +121,7 @@ const FooterSection = () => {
         {/* Bottom Bar */}
         <div className="border-t border-glass-border/30 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 Nephrite. All rights reserved.
+            &copy; {new Date().getFullYear()} Nephrite. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a

@@ -26,7 +26,7 @@ const HeroSection = () => {
         {/* Gradient orbs with parallax */}
         <motion.div
           style={{ y: orb1Y }}
-          className="absolute top-1/4 left-1/4 w-150 h-150 bg-jade/10 rounded-full blur-[120px] animate-glow-pulse"
+          className="absolute top-1/4 left-1/4 w-150 h-150 bg-primary/10 rounded-full blur-[120px] animate-glow-pulse"
         />
         <motion.div
           style={{ y: orb2Y }}
@@ -41,7 +41,7 @@ const HeroSection = () => {
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage: `linear-gradient(hsl(var(--jade)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--jade)) 1px, transparent 1px)`,
+              backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
               backgroundSize: "60px 60px",
             }}
           />
@@ -58,9 +58,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-jade/20 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-primary/20 mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-jade animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-sm text-muted-foreground">
               Now Available for Chrome
             </span>

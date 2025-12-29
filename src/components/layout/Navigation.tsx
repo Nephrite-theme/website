@@ -41,7 +41,7 @@ const Navigation = () => {
               alt="logo"
               className="w-8 h-8 text-jade transition-all duration-300 group-hover:text-jade-light"
             />
-            <div className="absolute inset-0 blur-lg bg-jade/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute inset-0 blur-lg bg-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
           <span className="text-xl font-bold tracking-tight">Nephrite</span>
         </a>

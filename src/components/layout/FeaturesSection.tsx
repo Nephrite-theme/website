@@ -7,7 +7,7 @@ const features = [
     title: "Eye Comfort",
     description:
       "Carefully calibrated low blue light tones reduce eye strain during extended browsing sessions. Your eyes will thank you.",
-    accent: "from-jade to-accent",
+    accent: "from-primary to-accent",
   },
   {
     icon: Palette,
@@ -21,7 +21,7 @@ const features = [
     title: "Multi-App Support",
     description:
       "Coming soon to VS Code, Spotify, and more. Build a cohesive aesthetic across your entire digital workspace.",
-    accent: "from-mint to-jade",
+    accent: "from-mint to-primary",
   },
 ];
 
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="text-jade text-sm font-semibold uppercase tracking-widest mb-4 block">
+          <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
             Why Nephrite
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -85,14 +85,14 @@ const FeaturesSection = () => {
                   className={`w-14 h-14 rounded-2xl bg-linear-to-br ${feature.accent} p-px`}
                 >
                   <div className="w-full h-full rounded-2xl bg-background flex items-center justify-center">
-                    <feature.icon className="w-6 h-6 text-jade" />
+                    <feature.icon className="w-6 h-6 text-primary" />
                   </div>
                 </div>
-                <div className="absolute inset-0 blur-xl bg-jade/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 blur-xl bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-jade transition-colors duration-300">
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -100,7 +100,7 @@ const FeaturesSection = () => {
               </p>
 
               {/* Decorative line */}
-              <div className="mt-6 h-px bg-linear-to-br from-transparent via-jade/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="mt-6 h-px bg-linear-to-br from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
           ))}
         </motion.div>

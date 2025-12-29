@@ -4,7 +4,7 @@ const galleryItems = [
   {
     title: "New Tab Experience",
     aspect: "landscape",
-    gradient: "from-jade/20 to-forest",
+    gradient: "from-primary/20 to-forest",
   },
   {
     title: "Tab Bar Design",
@@ -19,7 +19,7 @@ const galleryItems = [
   {
     title: "Settings Panel",
     aspect: "portrait",
-    gradient: "from-jade/30 to-forest-deep",
+    gradient: "from-primary/30 to-forest-deep",
   },
   {
     title: "Context Menus",
@@ -81,10 +81,10 @@ const GallerySection = () => {
               <div className="absolute inset-0 inner-glow" />
 
               {/* Decorative elements */}
-              <div className="absolute inset-4 border border-jade/10 rounded-xl" />
-              <div className="absolute top-6 left-6 w-3 h-3 rounded-full bg-jade/30" />
-              <div className="absolute top-6 left-12 w-3 h-3 rounded-full bg-jade/20" />
-              <div className="absolute top-6 left-18 w-3 h-3 rounded-full bg-jade/10" />
+              <div className="absolute inset-4 border border-primary/10 rounded-xl" />
+              <div className="absolute top-6 left-6 w-3 h-3 rounded-full bg-primary/30" />
+              <div className="absolute top-6 left-12 w-3 h-3 rounded-full bg-primary/20" />
+              <div className="absolute top-6 left-18 w-3 h-3 rounded-full bg-primary/10" />
 
               {/* Content placeholder lines */}
               <div className="absolute inset-8 flex flex-col justify-end gap-2">
@@ -93,7 +93,7 @@ const GallerySection = () => {
               </div>
 
               {/* Hover overlay */}
-              <div className="absolute inset-0 bg-jade/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* Title overlay */}
               <div className="absolute inset-0 flex items-end p-6">

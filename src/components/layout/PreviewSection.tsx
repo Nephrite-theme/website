@@ -63,7 +63,7 @@ const PreviewSection = () => {
     <section id="preview" className="py-32 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-200 h-150 bg-jade/5 rounded-full blur-[150px]" />
+        <div className="w-200 h-150 bg-primary/5 rounded-full blur-[150px]" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -97,15 +97,15 @@ const PreviewSection = () => {
               onClick={() => setActiveTheme(key)}
               className={`group relative px-6 py-4 rounded-2xl border transition-all duration-300 ${
                 activeTheme === key
-                  ? "border-jade/50 bg-jade/10"
-                  : "border-glass-border/30 bg-glass/30 hover:border-jade/30 hover:bg-jade/5"
+                  ? "border-primary/50 bg-primary/10"
+                  : "border-glass-border/30 bg-glass/30 hover:border-primary/30 hover:bg-primary/5"
               }`}
             >
               {/* Theme color preview dot */}
               <div
                 className={`w-4 h-4 rounded-full mb-2 mx-auto transition-all ${
                   activeTheme === key
-                    ? "ring-2 ring-jade ring-offset-2 ring-offset-background"
+                    ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
                     : ""
                 }`}
                 style={{ backgroundColor: themes[key].frame }}
@@ -127,7 +127,7 @@ const PreviewSection = () => {
               {activeTheme === key && (
                 <motion.div
                   layoutId="activeTheme"
-                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-1 bg-jade rounded-full"
+                  className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-8 h-1 bg-primary rounded-full"
                 />
               )}
             </button>
@@ -144,7 +144,7 @@ const PreviewSection = () => {
         >
           <div className="relative">
             {/* Outer glow container */}
-            <div className="absolute -inset-1 bg-jade/20 rounded-3xl blur-2xl opacity-40" />
+            <div className="absolute -inset-1 bg-primary/20 rounded-3xl blur-2xl opacity-40" />
 
             {/* Browser window */}
             <motion.div
@@ -280,7 +280,7 @@ const PreviewSection = () => {
                     className="w-16 h-16 rounded-2xl flex items-center justify-center"
                     style={{ backgroundColor: "hsl(142, 71%, 45%, 0.2)" }}
                   >
-                    <Star className="w-8 h-8 text-jade" />
+                    <Star className="w-8 h-8 text-primary" />
                   </div>
                   <div>
                     <div
@@ -366,7 +366,7 @@ const PreviewSection = () => {
         >
           <p className="text-muted-foreground text-sm">
             Currently viewing:{" "}
-            <span className="text-jade font-medium">{theme.name}</span>
+            <span className="text-primary font-medium">{theme.name}</span>
           </p>
         </motion.div>
       </div>

@@ -99,11 +99,12 @@ const Navigation = () => {
                 {link.label}
               </a>
             ))}
-            <Button asChild variant="jade" size="sm" className="mt-2">
+            <Button variant="jade" size="sm" className="mt-2">
               <a
                 href="https://github.com/Nephrite-theme/chrome"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 text-base"
               >
                 Install for Chrome
               </a>

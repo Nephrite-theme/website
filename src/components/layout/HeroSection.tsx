@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
-import { Chrome } from "../ui/svgs/chrome";
+import { SiGooglechrome } from "@icons-pack/react-simple-icons";
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -99,13 +99,14 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="jade" size="lg" className="gap-2 text-base">
-              <Chrome className="w-5 h-5" />
+            <Button variant="jade" size="lg">
               <a
                 href="https://github.com/Nephrite-theme/chrome"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center gap-2 text-base"
               >
+                <SiGooglechrome className="w-5 h-5" />
                 Install for Chrome
               </a>
             </Button>

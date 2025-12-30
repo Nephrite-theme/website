@@ -2,18 +2,17 @@ import { motion } from "framer-motion";
 import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { GithubDark } from "../ui/svgs/githubDark";
-import { XDark } from "../ui/svgs/xDark";
+import { SiGithub, SiX } from "@icons-pack/react-simple-icons";
 import logo from "@/assets/icons/logo.png";
 
 const FooterSection = () => {
   const socialLinks = [
     {
-      icon: GithubDark,
+      icon: SiGithub,
       href: "https://github.com/Nephrite-theme",
       label: "GitHub",
     },
-    { icon: XDark, href: "https://x.com/NephriteTheme", label: "Twitter" },
+    { icon: SiX, href: "https://x.com/NephriteTheme", label: "Twitter" },
     { icon: Mail, href: "#", label: "Email" },
   ];
 

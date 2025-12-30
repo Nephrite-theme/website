@@ -44,9 +44,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* ================================
-   ROOT (Light = Jade Dark UI)
-================================ */
 :root {
   --radius: 0.75rem;
 
@@ -108,9 +105,6 @@
   --shadow-card: 0 4px 30px oklch(0.12 0.02 165 / 0.6);
 }
 
-/* ================================
-   DARK (same aesthetic, tuned)
-================================ */
 .dark {
   --background: oklch(0.10 0.02 165);
   --card: oklch(0.14 0.02 165);
@@ -119,9 +113,6 @@
   --input: oklch(1 0 0 / 18%);
 }
 
-/* ================================
-   BASE
-================================ */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -137,9 +128,6 @@
   }
 }
 
-/* ================================
-   COMPONENTS
-================================ */
 @layer components {
   .glass {
     @apply backdrop-blur-xl border;
@@ -220,12 +208,6 @@
     transform: translateY(-2px);
   }
 
-  /* asegura que el contenido quede encima */
-  .btn-jade > * {
-    position: relative;
-    z-index: 1;
-  }
-
   .feature-card {
     @apply relative overflow-hidden transition-all duration-500;
   }
@@ -250,9 +232,6 @@
   }
 }
 
-/* ================================
-   UTILITIES
-================================ */
 @layer utilities {
 
   .container {

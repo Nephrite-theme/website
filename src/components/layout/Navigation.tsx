@@ -63,7 +63,13 @@ const Navigation = () => {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button variant="jade" size="sm">
-            Install for Chrome
+            <a
+              href="https://github.com/Nephrite-theme/chrome"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Install for Chrome
+            </a>
           </Button>
         </div>
 

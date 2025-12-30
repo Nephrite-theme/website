@@ -1,42 +1,47 @@
 import { motion } from "motion/react";
-import { Code2, Music, Terminal, Paintbrush } from "lucide-react";
-import { Chrome } from "../ui/svgs/chrome";
+import { Code2 } from "lucide-react";
+import {
+  SiFirefox,
+  SiGooglechrome,
+  SiHyper,
+  SiSpotify,
+} from "@icons-pack/react-simple-icons";
 
 const roadmapItems = [
   {
-    icon: Chrome,
+    icon: SiGooglechrome,
     title: "Chrome Theme",
     status: "available",
     description: "The flagship experience. Available now.",
     date: "Live",
   },
   {
+    icon: SiFirefox,
+    title: "Firefox Theme",
+    status: "coming",
+    description: "The flagship experience. Available now.",
+    date: "Coming Soon",
+  },
+  {
     icon: Code2,
     title: "VS Code Theme",
     status: "coming",
     description: "Bring Nephrite to your coding environment.",
-    date: "Q1 2025",
+    date: "Coming Soon",
   },
   {
-    icon: Music,
+    icon: SiSpotify,
     title: "Spotify Theme",
     status: "coming",
     description: "Harmonize your music player aesthetics.",
-    date: "Q2 2025",
+    date: "Coming Soon",
   },
   {
-    icon: Terminal,
+    icon: SiHyper,
     title: "Terminal Theme",
     status: "planned",
     description: "iTerm2, Hyper, and Windows Terminal.",
-    date: "Q3 2025",
-  },
-  {
-    icon: Paintbrush,
-    title: "Figma Theme",
-    status: "planned",
-    description: "Design with the Nephrite palette.",
-    date: "Q4 2025",
+    date: "Coming Soon",
   },
 ];
 
@@ -54,7 +59,7 @@ const RoadmapSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="text-jade text-sm font-semibold uppercase tracking-widest mb-4 block">
+          <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
             Roadmap
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -85,7 +90,7 @@ const RoadmapSection = () => {
                 {/* Timeline node */}
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 -translate-x-1/2 rounded-full border-2 border-primary bg-background z-10">
                   {item.status === "available" && (
-                    <div className="absolute inset-0 rounded-full bg-jade animate-ping opacity-50" />
+                    <div className="absolute inset-0 rounded-full bg-primary animate-ping opacity-50" />
                   )}
                   <div
                     className={`absolute inset-1 rounded-full ${item.status === "available" ? "bg-primary" : "bg-muted"}`}
@@ -96,25 +101,25 @@ const RoadmapSection = () => {
                 <div
                   className={`ml-20 md:ml-0 md:w-[calc(50%-3rem)] ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}
                 >
-                  <div className="glass rounded-2xl p-6 border border-glass-border/30 group hover:border-jade/30 transition-all duration-500">
+                  <div className="glass rounded-2xl p-6 border border-glass-border/30 group hover:border-primary/30 transition-all duration-500">
                     <div className="flex items-center gap-4 mb-4">
                       <div
                         className={`w-12 h-12 rounded-xl flex items-center justify-center ${
                           item.status === "available"
-                            ? "bg-jade/20 text-jade"
+                            ? "bg-primary/20 text-primary"
                             : "bg-muted text-muted-foreground"
                         }`}
                       >
                         <item.icon className="w-5 h-5" />
                       </div>
                       <div>
-                        <h3 className="font-semibold group-hover:text-jade transition-colors">
+                        <h3 className="font-semibold group-hover:text-primary transition-colors">
                           {item.title}
                         </h3>
                         <span
                           className={`text-xs font-medium ${
                             item.status === "available"
-                              ? "text-jade"
+                              ? "text-primary"
                               : "text-muted-foreground"
                           }`}
                         >
@@ -126,8 +131,8 @@ const RoadmapSection = () => {
                       {item.description}
                     </p>
                     {item.status === "available" && (
-                      <div className="mt-4 inline-flex items-center gap-2 text-jade text-sm font-medium">
-                        <span className="w-2 h-2 rounded-full bg-jade animate-pulse" />
+                      <div className="mt-4 inline-flex items-center gap-2 text-primary text-sm font-medium">
+                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                         Available Now
                       </div>
                     )}
